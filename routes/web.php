@@ -17,3 +17,5 @@ Route::get('/', 'PagesController@home')->name('home');
 Route::get('/help', 'PagesController@help')->name('help');
 Route::get('/about', 'PagesController@about')->name('about');
 
+
+Route::resource('packages', 'PackagesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);

@@ -9,28 +9,28 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>NeuBoard</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>@yield('title', 'Tracking') - Laravel 入门教程</title>
-
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <!-- Fonts  -->
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/simple-line-icons.css">
-    <!-- CSS Animate -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <!-- Daterange Picker -->
-    <link rel="stylesheet" href="/css/daterangepicker-bs3.css">
     <!-- Switchery -->
     <link rel="stylesheet" href="/css/switchery.min.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="/css/animate.css">
+
     <!-- Custom styles for this theme -->
     <link rel="stylesheet" href="/css/main.css">
     <!-- Feature detection -->
     <script src="/js/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/vendor/html5shiv.js"></script>
+    <script src="assets/js/vendor/respond.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
@@ -54,5 +54,19 @@
     <script src="/js/skycons.js"></script>
     <script src="/js/moment.min.js"></script>
     <script src="/js/daterangepicker.js"></script>
+
+
+    <!--Page Leve JS -->
+    <script src="/js/jquery.dataTables.js"></script>
+    <script src="/js/dataTables.bootstrap.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#example').dataTable();
+    });
+    </script>
+
+
+
+
 </body>
 </html>
