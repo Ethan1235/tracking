@@ -21,8 +21,6 @@ function route_class_l2($route_name)
     }
 }
 
-
-
 function route_()
 {
     $r=Route::currentRouteName();
